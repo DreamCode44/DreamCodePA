@@ -1,0 +1,157 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    background: url("img/fondo.png");
+    font-family: 'Signika', sans-serif;
+    font-size: 21px;
+}
+
+/* Estilos del encabezado fijo 
+
+/* Estilos del botón de menú */
+.menu {
+    display: flex;
+    cursor: pointer;
+}
+
+/* Estilos del contenido principal */
+.main {
+    position: relative;
+    top: 50px;
+    padding-top: 20px;
+}
+
+/* Estilos de la barra lateral */
+aside {
+    width: 60px;
+    background: #fff;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    box-shadow: 0px 3px 5px #6d6d6d;
+    overflow: hidden;
+    z-index: 99;
+}
+
+/* Estilos de la lista en la barra lateral */
+aside ul {
+    list-style: none;
+    width: 100%;
+}
+
+aside ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Estilos de los enlaces en la barra lateral */
+aside ul li a {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+aside ul li a span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000000;
+    width: 38px;
+}
+
+/* Estilos de las notificaciones en la barra lateral */
+aside ul li a span.notif {
+    position: absolute;
+    top: 8px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    background: #343436;
+    line-height: 31px;
+    border-radius: 100%;
+    color: #fff;
+}
+
+/* Estilos de notificaciones con colores */
+.red {
+    background: #e74c3c !important;
+    box-shadow: 0px 0px 10px #e74c3c;
+}
+
+.yellow {
+    background: #f1c40f !important;
+    box-shadow: 0px 0px 10px #f1c40f;
+}
+
+.green {
+    background: #27ae60 !important;
+    box-shadow: 0px 0px 10px #27ae60;
+}
+
+/* Estilos de notificaciones cuando se despliegan */
+aside ul li:hover a span.notif.red,
+aside ul li:hover a span.notif.yellow,
+aside ul li:hover a span.notif.green {
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+    box-shadow: 0px 0px 60px;
+    top: 10px;
+}
+
+/* Estilos cuando la barra lateral se expande */
+aside.keep.width {
+    width: 200px;
+}
+
+/* Animación de parpadeo */
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+/* Estilos de parpadeo */
+.blink {
+    text-decoration: blink;
+    animation: blinker 1.2s infinite;
+}
+
+p.blink.mah {
+    text-align: center;
+    line-height: 25;
+    position: relative;
+}
+
+p.blink.mah span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 102, 153, 0);
+    top: 248px;
+    left: 360px;
+}
+
+    /* Estilos iniciales de la barra lateral */
+aside.keep {
+    width: 60px;
+    /* ... otros estilos ... */
+}
+
+/* Estilos de la barra lateral cuando está abierta */
+aside.keep.open {
+    width: 200px; /* Ancho aumentado para mostrar la barra lateral */
+    /* ... otros estilos ... */
+}

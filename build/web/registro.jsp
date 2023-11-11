@@ -11,7 +11,7 @@
             Connection cn = null;
             PreparedStatement pstm = null;
             conectar msj = new conectar();
-            cn = msj.conectar();
+            cn = msj.getConnection();
             String usuario = request.getParameter("usuario");
             String correo = request.getParameter("correo");
             String contraseña = request.getParameter("contra");

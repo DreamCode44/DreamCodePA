@@ -18,7 +18,7 @@
 
             try {
                 conectar msj = new conectar();
-                cn = msj.conectar();
+                cn = msj.getConnection();
 
                 pstm = cn.prepareStatement("SELECT * FROM inicio_sesion WHERE (correo = ? OR usuario = ?) AND contra = ?");
                 pstm.setString(1, enter);
