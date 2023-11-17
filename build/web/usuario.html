@@ -1,97 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="CSS/usuario.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+	<meta charset="UTF-8">
+	<title>Home</title>
+        <link rel="stylesheet" href="CSS/usuario.css">
     </head>
-    <body>
-        <header>
-            <span class="menu"><i class="material-icons">menu</i></span>
-        </header>
-        <section class="main">
-            <aside class="keep">
-                <ul>
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">location_on</i></span>
-                            Location
-                            <span class="notif red">1</span>
-                        </a>
-                    </li>      
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">stay_current_portrait</i></span>
-                            App Menu
-                            <span class="notif yellow">2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">event</i></span>
-                             event
-                            <span class="notif green">6</span>
-                        </a>
-                    </li>      
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">local_offer</i></span>
-                            Offer
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">photo</i></span>
-                            photo
-                        </a>
-                    </li>      
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">import_contacts</i></span>
-                            contacts
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">event</i></span>
-                            event
-                        </a>
-                    </li>      
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">restaurant_menu</i></span>
-                            Restaurant
-                        </a>
-                    </li>      
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">textsms</i></span>
-                            textsms
-                        </a>
-                    </li>      
-                    <li>
-                        <a href="/">
-                            <span><i class="material-icons">receipt</i></span>
-                            Receipt
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-        <article>
-            <!-- Contenido principal -->
-        </article>
-        </section>
-        <script>
-        function toggleSidebar() {
-            const sidebar = document.querySelector(".keep");
-            sidebar.classList.toggle("open"); // Agrega o quita la clase "open" para mostrar u ocultar la barra lateral
-        }
-    </script>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+                <div class="logo">
+                    <h1>Insucare</h1>
+                </div>
+                    <nav class="menu">
+                        <a href="#">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contacto</a>
+                    </nav>
+        </div>
+    </header>
+	<div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+            <div class="container-menu">
+                <div class="cont-menu">
+                    <nav>
+                        <a href="#">Graficas</a>
+                        <a href="#">ChatBot</a>
+                        <a href="#">Estadisticas</a>
+                        <a href="#">Chat</a>
+                        <a href="#">Medicamentos</a>
+                        <a href="index.html">Cerrar Sesión</a>
+                    </nav>
+                        <label for="btn-menu">✖️</label>
+                </div>
+            </div>
     </body>
 </html>
-
 
 
 

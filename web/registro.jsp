@@ -15,8 +15,9 @@
             String usuario = request.getParameter("usuario");
             String correo = request.getParameter("correo");
             String contraseña = request.getParameter("contra");
+            String tipo = request.getParameter("tipo");
             
-            pstm = cn.prepareStatement("insert into inicio_sesion values('"+usuario+"','"+correo+"','"+contraseña+"');");
+            pstm = cn.prepareStatement("insert into inicio_sesion values('"+usuario+"','"+correo+"','"+contraseña+"','"+tipo+"');");
             pstm.executeUpdate();
             
             cn.close();
