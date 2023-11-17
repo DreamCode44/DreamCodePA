@@ -1,4 +1,5 @@
-drop database if exists PA;
+drop database if exists PA; 
+
 
 create database PA;
 
